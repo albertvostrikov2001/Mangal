@@ -1,3 +1,5 @@
+import { publicUrl } from '@/lib/publicPath';
+
 export type QuizStepLayout = 'list' | 'visual' | 'iconRow';
 
 export type QuizFrequencyIconId = 'rare' | 'weekends' | 'intense';
@@ -31,28 +33,28 @@ export const quizSteps: QuizStepConfig[] = [
         id: 'folding',
         label: 'Складной (для выездов и небольших участков)',
         cardTitle: 'Складной',
-        imageSrc: '/images/catalog-1.png',
+        imageSrc: publicUrl('/images/catalog-1.png'),
         imageAlt: 'Компактный переносной мангал на колёсах с дровницей',
       },
       {
         id: 'stationary',
         label: 'Стационарный (для дачи или двора)',
         cardTitle: 'Стационарный\nдля дачи',
-        imageSrc: '/images/catalog-6.png',
+        imageSrc: publicUrl('/images/catalog-6.png'),
         imageAlt: 'Стационарный мангальный комплекс с казаном и столешницами',
       },
       {
         id: 'wheels',
         label: 'На колёсах (удобно перемещать)',
         cardTitle: 'На колёсах',
-        imageSrc: '/images/catalog-3.png',
+        imageSrc: publicUrl('/images/catalog-3.png'),
         imageAlt: 'Мангал-гриль на колёсах с двумя решётками',
       },
       {
         id: 'gift',
         label: 'Беру на подарок',
         cardTitle: 'Беру на подарок',
-        imageSrc: '/images/catalog-5.png',
+        imageSrc: publicUrl('/images/catalog-5.png'),
         imageAlt: 'Презентабельный гриль с термометром и боковыми столами',
       },
     ],
@@ -98,28 +100,28 @@ export const quizSteps: QuizStepConfig[] = [
         id: 'classic',
         label: 'Только классический шашлык',
         cardTitle: 'Классика',
-        imageSrc: '/images/catalog-2.png',
+        imageSrc: publicUrl('/images/catalog-2.png'),
         imageAlt: 'Классический мангал с пазами под шампуры и боковыми полками',
       },
       {
         id: 'grill',
         label: 'Мангал-гриль (решётка, двойная готовка)',
         cardTitle: 'Мангал-гриль',
-        imageSrc: '/images/catalog-3.png',
+        imageSrc: publicUrl('/images/catalog-3.png'),
         imageAlt: 'Мангал с двумя решётками для гриля',
       },
       {
         id: 'combo',
         label: 'Комбо 2в1 с печью под казан',
         cardTitle: 'Комбо 2в1',
-        imageSrc: '/images/catalog-4.png',
+        imageSrc: publicUrl('/images/catalog-4.png'),
         imageAlt: 'Офсет-гриль: жар и копчение в одной установке',
       },
       {
         id: 'full',
         label: 'Полный комплекс (всё и сразу)',
         cardTitle: 'Полный комплекс',
-        imageSrc: '/images/catalog-6.png',
+        imageSrc: publicUrl('/images/catalog-6.png'),
         imageAlt: 'Мангальная станция с казаном, столами и дровницей',
       },
     ],

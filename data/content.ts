@@ -1,5 +1,6 @@
 import { siteConfig } from './config';
 import { kkQualityProduct } from './kazanKaravanMedia';
+import { publicUrl } from '@/lib/publicPath';
 
 export const heroContent = {
   headline:
@@ -12,10 +13,10 @@ export const heroContent = {
     { id: 'delivery', text: 'Бесплатная доставка по Беларуси' },
   ],
   ctaLabel: 'Подобрать мангал',
-  imageSrc: '/images/hero-main.png',
+  imageSrc: publicUrl('/images/hero-main.png'),
   imageAlt:
     'Весенняя акция: мангал с казаном и зоной приготовления на участке, консультант у гриля',
-} as const;
+};
 
 export const catalogSectionContent = {
   title: 'Выберите настроение — мы подберём комплектацию',
